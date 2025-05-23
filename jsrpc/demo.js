@@ -9,9 +9,6 @@ function SekiroClient(wsURL) {
   this.webSocketFactory = this.resolveWebSocketFactory();
   this.connect();
 }
-
-
-
 SekiroClient.prototype.resolveWebSocketFactory = function () {
   if (typeof window === "object") {
     var theWebSocket = window.WebSocket
